@@ -1,13 +1,14 @@
 import './App.css';
+import Todo from './components/Todo'
+import Title from './components/Title'
 
 function App() {
   return (
     <div>
-      <h1 className="">My Todo List</h1>
-      <div>
-        <h2>Finish FES</h2>
-      </div>
-
+      <Title></Title>
+      <Todo></Todo>
+      <Todo></Todo>
+      <Todo></Todo>
     </div>
   );
 }
