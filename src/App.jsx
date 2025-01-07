@@ -6,9 +6,11 @@ function App() {
   return (
     <div>
       <Title></Title>
-      <Todo></Todo>
-      <Todo></Todo>
-      <Todo></Todo>
+        <div className='todo__wrapper'>
+          <Todo></Todo>
+          <Todo></Todo>
+          <Todo></Todo>
+        </div>     
     </div>
   );
 }
