@@ -10,6 +10,7 @@ function Modal() {
                     <button className="btn">Confirm</button>
                 </div>
             </div>
+            <div className="backdrop"/>
         </div>
     );       
 }
