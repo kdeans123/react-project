@@ -2,7 +2,7 @@ import './Modal.css'
 
 function Modal() {
     return (
-        <div>
+        <>
             <div className='modal'>
                 <div className='modal__title'>Are you sure?</div>
                 <div className="modal__buttons">
@@ -11,7 +11,7 @@ function Modal() {
                 </div>
             </div>
             <div className="backdrop"/>
-        </div>
+        </>
     );       
 }
 

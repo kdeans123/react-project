@@ -8,9 +8,15 @@ function App() {
     <div>
       <Title></Title>
         <div className='todo__wrapper'>
-          <Todo title="Finish FES"/>
-          <Todo title="Finish Interview Section"/>
-          <Todo title="Land $100k Job"/>
+          <Todo 
+            title="Finish FES" 
+            paragraph="Code along with FES step by step"/>
+          <Todo 
+            title="Finish Interview Section" 
+            paragraph="Finish every interview question in the next 6 weeks"/>
+          <Todo 
+            title="Land $100k Job" 
+            paragraph="Apply to 100 jobs"/>
         </div>     
         <Modal></Modal>
     </div>
