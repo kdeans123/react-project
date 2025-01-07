@@ -8,9 +8,9 @@ function App() {
     <div>
       <Title></Title>
         <div className='todo__wrapper'>
-          <Todo></Todo>
-          <Todo></Todo>
-          <Todo></Todo>
+          <Todo title="Finish FES"/>
+          <Todo title="Finish Interview Section"/>
+          <Todo title="Land $100k Job"/>
         </div>     
         <Modal></Modal>
     </div>
