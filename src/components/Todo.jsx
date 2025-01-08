@@ -5,7 +5,7 @@ function Todo({ title, paragraph }) {
         <div className='todo'>
             <h2>{ title }</h2>
             <p>{paragraph}</p>
-            <button>Delete</button>
+            <button onClick={() => {} }>Delete</button>
         </div>
     )
 }

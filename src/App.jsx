@@ -2,8 +2,19 @@ import './App.css';
 import Todo from './components/Todo'
 import Title from './components/Title'
 import Modal from './components/Modal.jsx';
+import Counter from './components/Counter.jsx'
+import React, { useState } from 'react';
+
 
 function App() {
+  let isModalOpen = true;
+
+  function toggleModal() {
+    isModalOpen = !isModalOpen
+  }
+
+
+
   return (
     <div>
       <Title></Title>
@@ -18,7 +29,7 @@ function App() {
             title="Land $100k Job" 
             paragraph="Apply to 100 jobs"/>
         </div>     
-        <Modal></Modal>
+        { isModalOpen ? <Modal title="Are you sure?"/> : null}
     </div>
   );
 }
