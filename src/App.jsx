@@ -9,6 +9,10 @@ import React, { useState } from 'react';
 function App() {
   const [showModal, setShowModal] = useState(false)
 
+  function onTodoDelete() {
+    console.log('onTodoDelete()')
+  }
+
 
   return (
     <div>
