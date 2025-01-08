@@ -1,13 +1,13 @@
 import './Todo.css'
 
-function Todo({ title, paragraph }) {
+function Todo({ title, onTodoDelete }) {
     return (
         <div className='todo'>
             <h2>{ title }</h2>
             <p>{paragraph}</p>
-            <button onClick={() => {} }>Delete</button>
+            <button onClick={onTodoDelete}>Delete</button>
         </div>
     )
 }
 
-export default Todo
+export default Todo;
