@@ -10,7 +10,16 @@ function App() {
   const [showModal, setShowModal] = useState(false)
 
   function onTodoDelete() {
+    setShowModal(true)
     console.log('onTodoDelete()')
+  }
+
+  function cancelModal() {
+    setShowModal(false)
+  }
+
+  function confirmModal() {
+    setShowModal(false)
   }
 
 
@@ -22,7 +31,7 @@ function App() {
           <Todo onTodoDelete={onTodoDelete} title="Finish Interview Section"/>
           <Todo onTodoDelete={onTodoDelete} title="Land $100k Job"/>
         </div>     
-        {showModal && <Modal title="Confirm delete?"/>}
+        {showModal && <Modal cancelModal={cancelModal} confirmModal={confirmModal} title="Confirm delete?"/>}
     </div>
   );
 }
